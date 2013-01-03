@@ -9,8 +9,8 @@ pkgbase=linux-kirkwood
 pkgname=('linux-kirkwood' 'linux-headers-kirkwood')
 #pkgname=linux-test       # Build kernel with a different name
 _kernelname=${pkgname#linux}
-_basekernel=3.8-rc1
-pkgver=3.8RC1
+_basekernel=3.8-rc2
+pkgver=3.8RC2
 pkgrel=1
 cryptover=1.5
 arch=('arm')
@@ -26,7 +26,7 @@ source=("ftp://ftp.kernel.org/pub/linux/kernel/v3.x/linux-${_basekernel}.tar.bz2
         'change-default-console-loglevel.patch'
         'usb-add-reset-resume-quirk-for-several-webcams.patch'
         "http://download.gna.org/cryptodev-linux/cryptodev-linux-${cryptover}.tar.gz")
-md5sums=('0d6fa0f58afce817825a22ac73e5d7a7'
+md5sums=('3e1de566dc10796308a5048d54c23600'
          '4a98e25fef4bb596f9bcdeb720b1f20f'
          'f5d3635da03cb45904bedd69b47133de'
          '909500e91bc19acbff4645a8d93ed440'
